@@ -2250,15 +2250,6 @@
       <add position="starting" by-id="ac-12.1">
         <prop ns="https://paramify.com/ns/oscal" name="sla-control" value="true" />
       </add>
-      <add position="ending" by-id="ac-12.1_smt">
-        <part id="ac-12.1_fr" name="item">
-          <title>AC-12 (1) Additional FedRAMP Requirements and Guidance</title>
-          <part id="ac-12.1_fr_gdn.1" name="guidance">
-            <prop name="label" value="Guidance:" />
-            <p>https://www.owasp.org/index.php/Testing_for_logout_functionality_%28OTG-SESS-006%29</p>
-          </part>
-        </part>
-      </add>
       <add position="starting" by-id="ac-12.1.a_obj.1">
         <prop ns="https://fedramp.gov/ns/oscal" name="response-point"
           value="You must fill in this response point." />
@@ -3854,15 +3845,6 @@
       </add>
     </alter>
     <alter control-id="au-2">
-      <add position="ending" by-id="au-2_smt">
-        <part id="au-2_fr" name="item">
-          <title>AU-2 Additional FedRAMP Requirements and Guidance</title>
-          <part id="au-2_fr_smt.1" name="item">
-            <prop name="label" value="Requirement:" />
-            <p>Coordination between service provider and consumer shall be documented and accepted by the JAB/AO.</p>
-          </part>
-        </part>
-      </add>
       <add position="starting" by-id="au-2">
         <prop ns="https://fedramp.gov/ns/oscal" name="CORE" value="true" />
       </add>
@@ -4405,16 +4387,6 @@
       </add>
     </alter>
     <alter control-id="ca-2">
-      <add position="ending" by-id="ca-2_smt">
-        <part id="ca-2_fr" name="item">
-          <title>CA-2 Additional FedRAMP Requirements and Guidance</title>
-          <part id="ca-2_fr_gdn.1" name="guidance">
-            <prop name="label" value="Guidance:" />
-            <p>See the FedRAMP Documents page under Key Cloud Service Provider (CSP) Documents, Annual Assessment Guidance <a href="https://www.fedramp.gov/documents/">https://www.fedramp.gov/documents/</a>
-            </p>
-          </part>
-        </part>
-      </add>
       <add position="starting" by-id="ca-2">
         <prop ns="https://fedramp.gov/ns/oscal" name="CORE" value="true" />
       </add>
