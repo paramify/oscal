@@ -2372,7 +2372,7 @@
       </add>
     </alter>
     <alter control-id="ac-17.3">
-      <add position="ending" by-id="ac-8_smt">
+      <add position="ending" by-id="ac-17.3_smt">
         <part id="ac-17.3_dod" name="item">
           <title>Additional DoD Requirement</title>
           <part id="ac-17.3_dod_smt.1" name="item">
