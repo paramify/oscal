@@ -2377,7 +2377,7 @@
           <title>Additional DoD Requirement</title>
           <part id="ac-17.3_dod_smt.1" name="item">
             <prop name="label" value="Requirement:" />
-            <p>Mission Owner configures the CSO provided customer logon banner capability and any Mission Owner provided logon capability to mission applications, virtual machines, databases, etc. IAW DoDI 8500.01 Encl. 3, para 9.a.(1)(d) for all privileged and non-privileged customer users that must logon.</p>
+            <p>Off-premises CSO infrastructure must connect DoD customers via one of more external DODIN Cloud Access Points (CAPs). On-premises commercial CSO infrastructures must connect to DoD customers via one of more internal DODIN Cloud Access Points (CAPs).</p>
           </part>
         </part>
       </add>
