@@ -1,0 +1,493 @@
+{
+  "catalog": {
+    "uuid": "e7ec4d73-c6b0-4f9b-9abc-eac06a6bce83",
+    "metadata": {
+      "title": "Department of Defense (DoD) - General Readiness Controls - Revision 4",
+      "last-modified": "2022-10-20T13:57:28.91745-04:00",
+      "version": "2022-01-22",
+      "oscal-version": "1.0.0",
+      "props": [
+        {
+          "name": "keywords",
+          "value": "DOD, General Readiness"
+        }
+      ],
+      "roles": [
+        {
+          "id": "creator",
+          "title": "Document creator"
+        },
+        {
+          "id": "contact",
+          "title": "Contact"
+        }
+      ],
+      "parties": [
+        {
+          "uuid": "paramify",
+          "type": "organization",
+          "name": "Paramify, Inc",
+          "email-addresses": ["contact@paramify.com"],
+          "addresses": [
+            {
+              "addr-lines": [
+                "Paramify, Inc",
+                "Attn: Business Development",
+                "1555 N Freedom Blvd",
+                "Ste #100"
+              ],
+              "city": "Provo",
+              "state": "UT",
+              "postal-code": "84604"
+            }
+          ]
+        }
+      ],
+      "responsible-parties": [
+        {
+          "role-id": "creator",
+          "party-uuids": ["paramify"]
+        },
+        {
+          "role-id": "contact",
+          "party-uuids": ["paramify"]
+        }
+      ]
+    },
+    "groups": [
+      {
+        "id": "gr",
+        "class": "family",
+        "title": "General Readiness (DoD)",
+        "controls": [
+          {
+            "id": "gr-1",
+            "class": "DOD-IL5-FRH",
+            "title": "DoD PKI Authentication",
+
+            "props": [
+              {
+                "name": "label",
+                "value": "GR-1"
+              },
+              {
+                "name": "sort-id",
+                "value": "gr-01"
+              }
+            ],
+            "parts": [
+              {
+                "id": "gr-1_dod_smt",
+                "name": "statement",
+                "prose": "How is the CSP/CSO support for DoD PKI authentication by DoD privileged and non-privileged users implemented? Response should include the processes and protocols used along with their implementation.",
+                "parts": [
+                  {
+                    "id": "gr-1_dod_smt.a",
+                    "name": "item",
+                    "props": [
+                      {
+                        "name": "label",
+                        "value": "a."
+                      }
+                    ],
+                    "prose": "Does the CSO enforce DoD PKI (in accordance with DoDI 8520.03) for the authentication of both privileged and non-privileged users? This includes both the use of CAC physical tokens or Alt tokens, as well as DoD certificate revocation resources."
+                  },
+                  {
+                    "id": "gr-1_dod_smt.b",
+                    "name": "item",
+                    "props": [
+                      {
+                        "name": "label",
+                        "value": "b."
+                      }
+                    ],
+                    "prose": "Is the CSO DoD PK-enabled for their customer ordering/service management portals for all service offerings?"
+                  },
+                  {
+                    "id": "gr-1_dod_smt.c",
+                    "name": "item",
+                    "props": [
+                      {
+                        "name": "label",
+                        "value": "c."
+                      }
+                    ],
+                    "prose": "If the CSO is a SaaS, is the CSO DoD PK-enabled for general DoD user access?"
+                  }
+                ]
+              },
+              {
+                "id": "gr-1_gdn",
+                "name": "guidance",
+                "prose": "In accordance with DoD SRG sections 5.4; CSP use of DoD Public Key Infrastructure (PKI) and subsections., and 5.10.4, Active Directory Integration for Cloud and subsections"
+              }
+            ]
+          },
+          {
+            "id": "gr-2",
+            "class": "DOD-IL5-FRH",
+            "title": "DoD IP Addressing",
+
+            "props": [
+              {
+                "name": "label",
+                "value": "GR-2"
+              },
+              {
+                "name": "sort-id",
+                "value": "gr-02"
+              }
+            ],
+            "parts": [
+              {
+                "id": "gr-2_dod_smt",
+                "name": "statement",
+                "prose": "How will the CSO support DoD IP addressing implementation? Plan of action for implementation should be described below."
+              },
+              {
+                "id": "gr-2_gdn",
+                "name": "guidance",
+                "prose": "In accordance with DoD CC SRG section 5.10.4.1, IP Addressing"
+              }
+            ]
+          },
+          {
+            "id": "gr-3",
+            "class": "DOD-IL5-FRH",
+            "title": "Data Locations",
+
+            "props": [
+              {
+                "name": "label",
+                "value": "GR-3"
+              },
+              {
+                "name": "sort-id",
+                "value": "gr-03"
+              }
+            ],
+            "parts": [
+              {
+                "id": "gr-3_dod_smt",
+                "name": "statement",
+                "prose": "Does the CSO ensure that all DoD data remains in the States, districts, territories, and outlying areas of the United States and hence ensuring that the data remain under U.S. jurisdiction at all times?"
+              },
+              {
+                "id": "gr-3_req",
+                "name": "DoD Requirement",
+                "prose": "The CSO provides a list of the physical locations where the data could be stored at any given time and how it is ensured that the data remains within these boundaries."
+              },
+              {
+                "id": "gr-3_gdn",
+                "name": "guidance",
+                "prose": "In accordance with DoD CC SRG section 5.2.1, Jurisdiction/Location Requirements"
+              }
+            ]
+          },
+          {
+            "id": "gr-4",
+            "class": "DOD-IL5-FRH",
+            "title": "Management Plane Connectivity",
+
+            "props": [
+              {
+                "name": "label",
+                "value": "GR-4"
+              },
+              {
+                "name": "sort-id",
+                "value": "gr-04"
+              }
+            ],
+            "parts": [
+              {
+                "id": "gr-4_dod_smt",
+                "name": "statement",
+                "prose": "Is the CSO management/monitoring plane (and/or specific devices/systems) integrated with the CSP’s corporate network or the general commercial CSO management plane? If so, how is the management plane connectivity implemented."
+              },
+              {
+                "id": "gr-4_gdn",
+                "name": "guidance",
+                "prose": "In accordance with DoD CC SRG Section 5.10.2.3, Management Plane Connectivity"
+              }
+            ]
+          },
+          {
+            "id": "gr-5",
+            "class": "DOD-IL5-FRH",
+            "title": "CSO Personnel",
+
+            "props": [
+              {
+                "name": "label",
+                "value": "GR-5"
+              },
+              {
+                "name": "sort-id",
+                "value": "gr-05"
+              }
+            ],
+            "parts": [
+              {
+                "id": "gr-5_dod_smt",
+                "name": "statement",
+                "prose": "",
+                "parts": [
+                  {
+                    "id": "gr-5_dod_smt.a",
+                    "name": "item",
+                    "props": [
+                      {
+                        "name": "label",
+                        "value": "a."
+                      }
+                    ],
+                    "prose": "Does the CSP establish position sensitivity risk determinations based on OPM guidance and the Position Sensitivity Tool?"
+                  },
+                  {
+                    "id": "gr-5_dod_smt.b",
+                    "name": "item",
+                    "props": [
+                      {
+                        "name": "label",
+                        "value": "b."
+                      }
+                    ],
+                    "prose": "How does the CSP restrict potential access to DoD information to U.S. Citizens?"
+                  },
+                  {
+                    "id": "gr-5_dod_smt.c",
+                    "name": "item",
+                    "props": [
+                      {
+                        "name": "label",
+                        "value": "c."
+                      }
+                    ],
+                    "prose": "Are all CSO roles with access to DoD CUI categorized as critical sensitive been subject to a satisfactory Single Scope Background Investigation or other background investigation for high risk?"
+                  },
+                  {
+                    "id": "gr-5_dod_smt.d",
+                    "name": "item",
+                    "props": [
+                      {
+                        "name": "label",
+                        "value": "d."
+                      }
+                    ],
+                    "prose": "Are other CSO roles categorized as moderate risk position designations with access to non-critical sensitive information subject to a satisfactory moderate risk background investigation or a National Agency Check with Law and Credit?"
+                  }
+                ]
+              },
+              {
+                "id": "gr-5_gdn",
+                "name": "guidance",
+                "prose": "In accordance with DoD CC SRG Sections 5.6.2 Personnel Requirements"
+              }
+            ]
+          },
+          {
+            "id": "gr-6",
+            "class": "DOD-IL5-FRH",
+            "title": "Private Connection Availability Between CSP’S/CSO’s Network and DoD Network",
+
+            "props": [
+              {
+                "name": "label",
+                "value": "GR-6"
+              },
+              {
+                "name": "sort-id",
+                "value": "gr-06"
+              }
+            ],
+            "parts": [
+              {
+                "id": "gr-6_dod_smt",
+                "name": "statement",
+                "prose": "How will the CSP/CSO obtain a private connection capability between the off-premises CSP’s/CSO’s network and DoD networks in support of connections through the boundary cloud access point (BCAP) and meet-me points?"
+              },
+              {
+                "id": "gr-6_gdn",
+                "name": "guidance",
+                "prose": "In accordance with DoD CC SRG Sections 5.10.1, Cloud Access Point (CAP) and subsections, 5.10.1.1.2, NIPRNet BCAP Meet-Me Points, and 5.10.1.1.3, CSP Support for BCAP Connectivity"
+              }
+            ]
+          },
+          {
+            "id": "gr-7",
+            "class": "DOD-IL5-FRH",
+            "title": "Reliance on Internet-Based Capabilities",
+
+            "props": [
+              {
+                "name": "label",
+                "value": "GR-7"
+              },
+              {
+                "name": "sort-id",
+                "value": "gr-07"
+              }
+            ],
+            "parts": [
+              {
+                "id": "gr-7_dod_smt",
+                "name": "statement",
+                "prose": "",
+
+                "parts": [
+                  {
+                    "id": "gr-7_dod_smt.a",
+                    "name": "item",
+                    "props": [
+                      {
+                        "name": "label",
+                        "value": "a."
+                      }
+                    ],
+                    "prose": "What is the CSO or user experience reliance on internet-based capabilities such as the public DNS or content delivery networks?"
+                  },
+                  {
+                    "id": "gr-7_dod_smt.b",
+                    "name": "item",
+                    "props": [
+                      {
+                        "name": "label",
+                        "value": "b."
+                      }
+                    ],
+                    "prose": "How are such capabilities available via the CSO infrastructure and the connections to it via the DISA BCAPs?"
+                  }
+                ]
+              },
+              {
+                "id": "gr-7_req",
+                "name": "DoD requirement",
+                "prose": "The CSO must be able to function if DoD limits access to or disconnects from the internet in times of conflict or when the DISN/DODIN is being attacked."
+              },
+              {
+                "id": "gr-7_gdn",
+                "name": "guidance",
+                "prose": "In accordance with DoD CC SRG Section 5.10.4.2, Domain Name Services (DNS)"
+              }
+            ]
+          },
+          {
+            "id": "gr-8",
+            "class": "DOD-IL5-FRH",
+            "title": "Reliance of Internet Access",
+
+            "props": [
+              {
+                "name": "label",
+                "value": "GR-8"
+              },
+              {
+                "name": "sort-id",
+                "value": "gr-08"
+              }
+            ],
+            "parts": [
+              {
+                "id": "gr-8_dod_smt",
+                "name": "statement",
+                "prose": "",
+
+                "parts": [
+                  {
+                    "id": "gr-8_dod_smt.a",
+                    "name": "item",
+                    "props": [
+                      {
+                        "name": "label",
+                        "value": "a."
+                      }
+                    ],
+                    "prose": "What is the reliance on internet access to reach the CSO management/service-ordering portal or API endpoints from either NIPRNet or from within the CSO?"
+                  },
+                  {
+                    "id": "gr-8_dod_smt.b",
+                    "name": "item",
+                    "props": [
+                      {
+                        "name": "label",
+                        "value": "b."
+                      }
+                    ],
+                    "prose": "How are all such capabilities available via the CSO infrastructure and the connections to it via the DISN BCAPs?"
+                  }
+                ]
+              },
+              {
+                "id": "gr-8_req",
+                "name": "DoD requirement",
+                "prose": "The CSO must be able to function if DoD limits access to or disconnects from the internet in times of conflict or when the DISN/DODIN is being attacked."
+              },
+              {
+                "id": "gr-8_gdn",
+                "name": "guidance",
+                "prose": "In accordance with DoD CC SRG Section 5.10.1, Cloud Access Point (CAP) and subsections"
+              }
+            ]
+          },
+          {
+            "id": "gr-9",
+            "class": "DOD-IL5-FRH",
+            "title": "CSP/CSO’s Protection",
+
+            "props": [
+              {
+                "name": "label",
+                "value": "GR-9"
+              },
+              {
+                "name": "sort-id",
+                "value": "gr-09"
+              }
+            ],
+            "parts": [
+              {
+                "id": "gr-9_dod_smt",
+                "name": "statement",
+                "prose": "What are the protections in place in the CSP’s network and CSO to prevent any internet connection to the CSP’s/CSO’s network and CSO from becoming a back door to the NIPRNet via the private connection through the BCAP?"
+              },
+              {
+                "id": "gr-9_gdn",
+                "name": "guidance",
+                "prose": "In accordance with DoD CC SRG Section 5.10.1.1.4, CSP/CSO Network Connectivity to internet and BCAP"
+              }
+            ]
+          },
+          {
+            "id": "gr-10",
+            "class": "DOD-IL5-FRH",
+            "title": "Defense in Depth Architecture",
+
+            "props": [
+              {
+                "name": "label",
+                "value": "GR-10"
+              },
+              {
+                "name": "sort-id",
+                "value": "gr-10"
+              }
+            ],
+            "parts": [
+              {
+                "id": "gr-10_dod_smt",
+                "name": "statement",
+                "prose": "How robust is the CSP’s required boundary protection (defense-in-depth security/protective measures) implemented between the internet and the CSO for its protection from internet-based threats?"
+              },
+              {
+                "id": "gr-10_gdn",
+                "name": "guidance",
+                "prose": "In accordance with DoD CC SRG Section 5.10.3, CSP Service Architecture and subsections"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
