@@ -70,10 +70,24 @@
 				</description>
 			</constraint>
 		</set-parameter>
+    <set-parameter param-id="ac-07_odp.01">
+			<constraint>
+				<description>
+					<p>for privileged users three unsuccessful attempts; for nonprivileged users 10 attempts</p>
+				</description>
+			</constraint>
+		</set-parameter>
     <set-parameter param-id="ac-07_odp.02">
 			<constraint>
 				<description>
 					<p>for privileged users an administrator is required to unlock; for nonprivileged users the account is automatically unlocked after 30 minutes</p>
+				</description>
+			</constraint>
+		</set-parameter>
+    <set-parameter param-id="ac-07_odp.03">
+			<constraint>
+				<description>
+					<p>notify system administrator</p>
 				</description>
 			</constraint>
 		</set-parameter>

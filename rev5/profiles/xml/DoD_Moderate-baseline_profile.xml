@@ -56,6 +56,13 @@
   </merge>
   <modify>
 
+		<set-parameter param-id="ac-02.13_odp.01">
+			<constraint>
+				<description>
+					<p>one (1) hour</p>
+				</description>
+			</constraint>
+		</set-parameter>
     <set-parameter param-id="ac-07_odp.01">
 			<constraint>
 				<description>
@@ -74,13 +81,6 @@
 			<constraint>
 				<description>
 					<p>notify system administrator</p>
-				</description>
-			</constraint>
-		</set-parameter>
-    <set-parameter param-id="ac-02.13_odp.01">
-			<constraint>
-				<description>
-					<p>one (1) hour</p>
 				</description>
 			</constraint>
 		</set-parameter>
@@ -119,6 +119,20 @@
 				</description>
 			</constraint>
 		</set-parameter>
+    <set-parameter param-id="ps-06_odp.01">
+			<constraint>
+				<description>
+					<p>at least annually</p>
+				</description>
+			</constraint>
+		</set-parameter>
+		<set-parameter param-id="ps-06_odp.02">
+			<constraint>
+				<description>
+					<p>at least annually and any time there is a change to the user's level of access</p>
+				</description>
+			</constraint>
+		</set-parameter>
     <set-parameter param-id="sa-09.05_odp.01">
 			<constraint>
 				<description>
@@ -144,27 +158,6 @@
 			<constraint>
 				<description>
 					<p>DODI 8520.02, Public Key Infrastructure (PKI) and Public Key (PK) Enabling</p>
-				</description>
-			</constraint>
-		</set-parameter>
-    <set-parameter param-id="ps-04_odp.01">
-			<constraint>
-				<description>
-					<p>four (4) hours</p>
-				</description>
-			</constraint>
-		</set-parameter>
-    <set-parameter param-id="ps-06_odp.01">
-			<constraint>
-				<description>
-					<p>at least annually</p>
-				</description>
-			</constraint>
-		</set-parameter>
-		<set-parameter param-id="ps-06_odp.02">
-			<constraint>
-				<description>
-					<p>at least annually and any time there is a change to the user's level of access</p>
 				</description>
 			</constraint>
 		</set-parameter>
