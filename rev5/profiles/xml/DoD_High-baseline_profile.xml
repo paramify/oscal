@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/usnistgov/OSCAL/v1.0.4/xml/schema/oscal_complete_schema.xsd" schematypens="http://www.w3.org/2001/XMLSchema" title="OSCAL complete schema"?>
+<profile xmlns="http://csrc.nist.gov/ns/oscal/1.0"
+  uuid="8a2ca033-e5f4-4779-89c5-20c8865083ef">
+  <metadata>
+    <title>DoD Rev 5 Baseline for High Confidentiality-Integrity-Availability levels</title>
+    <published>2024-01-17T18:24:38.000+00:00</published>
+    <last-modified>2024-01-17T18:24:38.000+00:00</last-modified>
+    <version>fedramp1.1.1-oscal1.0.4</version>
+    <oscal-version>1.0.4</oscal-version>
+    <role id="prepared-by">
+      <title>Paramify</title>
+    </role>
+    <party uuid="82dfc5c7-e853-4810-825e-ad066422d4a7" type="organization">
+      <name>Paramify, inc.</name>
+      <short-name>Paramify</short-name>
+      <link href="https://paramify.com" rel="homepage" />
+    </party>
+    <responsible-party role-id="prepared-by">
+      <party-uuid>82dfc5c7-e853-4810-825e-ad066422d4a7</party-uuid>
+    </responsible-party>
+    <remarks><p>This profile contains all fedramp moderate controls plus a superset of all controls that are required in all dod profiles with dod parameters.</p></remarks>
+  </metadata>
+  <import href="#ad005eae-cc63-4e64-9109-3905a9a825e4">
+    <include-controls>
+      <with-id>ac-2.13</with-id>
+      <with-id>ac-3.4</with-id>
+      <with-id>ac-7</with-id>
+      <with-id>ac-12.1</with-id>
+      <with-id>ac-16</with-id>
+      <with-id>ac-16.6</with-id>
+      <with-id>au-5.1</with-id>
+      <with-id>au-10</with-id>
+      <with-id>cm-7.5</with-id>
+      <with-id>ia-3.1</with-id>
+      <with-id>ma-5.2</with-id>
+      <with-id>ma-5.3</with-id>
+      <with-id>ma-5.4</with-id>
+      <with-id>ma-5.5</with-id>
+      <with-id>ps-3.4</with-id>
+      <with-id>ps-4</with-id>
+      <with-id>ps-4.1</with-id>
+      <with-id>ps-6.3</with-id>
+      <with-id>sa-9.1</with-id>
+      <with-id>sa-9.3</with-id>
+      <with-id>sa-9.5</with-id>
+      <with-id>sa-9.6</with-id>
+      <with-id>sa-9.7</with-id>
+      <with-id>sa-9.8</with-id>
+      <with-id>sc-7.11</with-id>
+      <with-id>sc-7.14</with-id>
+      <with-id>sc-12.6</with-id>
+      <with-id>sc-17</with-id>
+      <with-id>sc-24</with-id>
+      <with-id>sc-18</with-id>
+      <with-id>sc-18.3</with-id>
+      <with-id>sc-18.4</with-id>
+    </include-controls>
+  </import>
+  <merge>
+    <combine method="keep" />
+    <as-is>true</as-is>
+  </merge>
+  <modify>
+
+    <set-parameter param-id="ac-02.13_odp.01">
+			<constraint>
+				<description>
+					<p>one (1) hour</p>
+				</description>
+			</constraint>
+		</set-parameter>
+    <set-parameter param-id="ac-07_odp.02">
+			<constraint>
+				<description>
+					<p>for privileged users an administrator is required to unlock; for nonprivileged users the account is automatically unlocked after 30 minutes</p>
+				</description>
+			</constraint>
+		</set-parameter>
+    <set-parameter param-id="cm-07.05_odp.02">
+			<constraint>
+				<description>
+					<p>at least quarterly or when there is a change</p>
+				</description>
+			</constraint>
+		</set-parameter>
+    <set-parameter param-id="au-05.01_odp.03">
+			<constraint>
+				<description>
+					<p>maximum of 75%</p>
+				</description>
+			</constraint>
+		</set-parameter>
+    <set-parameter param-id="au-10_odp">
+			<constraint>
+				<description>
+					<p>minimum actions including the addition, modification, deletion, approval, sending, or receiving of data</p>
+				</description>
+			</constraint>
+		</set-parameter>
+    <set-parameter param-id="cm-07.05_odp.02">
+			<constraint>
+				<description>
+					<p>at least quarterly or when there is a change</p>
+				</description>
+			</constraint>
+		</set-parameter>
+    <set-parameter param-id="ia-05.01_odp.01">
+			<constraint>
+				<description>
+					<p>at least quarterly</p>
+				</description>
+			</constraint>
+		</set-parameter>
+		<set-parameter param-id="ia-05.01_odp.02">
+			<constraint>
+				<description>
+					<p>a case sensitive 12-character mix of uppercase letters, lowercase letters, numbers, and special characters in including at least one of each; modify at least 50% of the characters when new passwords are created</p>
+				</description>
+			</constraint>
+		</set-parameter>
+    <set-parameter param-id="ps-03.04_odp.02">
+			<constraint>
+				<description>
+					<p>users: U.S. citizens, U.S. nationals, or U.S. persons, foreign personnel as allowed by current DOD Polices with AO approval; administrators: U.S. citizens, U.S. nationals, or U.S. persons</p>
+				</description>
+			</constraint>
+		</set-parameter>
+    <set-parameter param-id="sa-09.05_odp.01">
+			<constraint>
+				<description>
+					<p>information processing, information or data, AND system services</p>
+				</description>
+			</constraint>
+		</set-parameter>
+		<set-parameter param-id="sa-09.05_odp.02">
+			<constraint>
+				<description>
+					<p>U.S./U.S. Territories or geographic locations where there is U.S. jurisdiction</p>
+				</description>
+			</constraint>
+		</set-parameter>
+		<set-parameter param-id="sa-09.05_odp.03">
+			<constraint>
+				<description>
+					<p>all data, systems, or services</p>
+				</description>
+			</constraint>
+		</set-parameter>
+    <set-parameter param-id="sc-17_odp">
+			<constraint>
+				<description>
+					<p>DODI 8520.02, Public Key Infrastructure (PKI) and Public Key (PK) Enabling</p>
+				</description>
+			</constraint>
+		</set-parameter>
+
+    <alter control-id="ac-2.13">
+      <add position="starting" by-id="ac-2.13">
+        <prop ns="https://paramify.com/ns/oscal" name="sla-control" value="true" />
+      </add>
+    </alter>
+		<alter control-id="ac-3.4">
+      <add position="starting" by-id="ac-3.4">
+        <prop ns="https://paramify.com/ns/oscal" name="sla-control" value="true" />
+      </add>
+    </alter>
+		<alter control-id="ac-12.1">
+      <add position="starting" by-id="ac-12.1">
+        <prop ns="https://paramify.com/ns/oscal" name="sla-control" value="true" />
+      </add>
+    </alter>
+		<alter control-id="ac-16">
+      <add position="starting" by-id="ac-16">
+        <prop ns="https://paramify.com/ns/oscal" name="sla-control" value="true" />
+      </add>
+    </alter>
+		<alter control-id="ac-16.6">
+      <add position="starting" by-id="ac-16.6">
+        <prop ns="https://paramify.com/ns/oscal" name="sla-control" value="true" />
+      </add>
+    </alter>
+		<alter control-id="au-10">
+      <add position="starting" by-id="au-10">
+        <prop ns="https://paramify.com/ns/oscal" name="sla-control" value="true" />
+      </add>
+    </alter>
+		<alter control-id="ia-3.1">
+      <add position="starting" by-id="ia-3.1">
+        <prop ns="https://paramify.com/ns/oscal" name="sla-control" value="true" />
+      </add>
+    </alter>
+		<alter control-id="ps-4.1">
+      <add position="starting" by-id="ps-4.1">
+        <prop ns="https://paramify.com/ns/oscal" name="sla-control" value="true" />
+      </add>
+    </alter>
+		<alter control-id="ps-6.3">
+      <add position="starting" by-id="ps-6.3">
+        <prop ns="https://paramify.com/ns/oscal" name="sla-control" value="true" />
+      </add>
+    </alter>
+		<alter control-id="sc-7.11">
+      <add position="starting" by-id="sc-7.11">
+        <prop ns="https://paramify.com/ns/oscal" name="sla-control" value="true" />
+      </add>
+    </alter>
+		<alter control-id="sc-7.14">
+      <add position="starting" by-id="sc-7.14">
+        <prop ns="https://paramify.com/ns/oscal" name="sla-control" value="true" />
+      </add>
+    </alter>
+		<alter control-id="sc-18.3">
+      <add position="starting" by-id="sc-18.3">
+        <prop ns="https://paramify.com/ns/oscal" name="sla-control" value="true" />
+      </add>
+    </alter>
+		<alter control-id="sc-18.4">
+      <add position="starting" by-id="sc-18.4">
+        <prop ns="https://paramify.com/ns/oscal" name="sla-control" value="true" />
+      </add>
+    </alter>
+
+    <alter control-id="ac-7">
+			<add position="ending" by-id="ac-7_smt">
+				<part id="ac-7_fr" name="item">
+					<title>AC-7 Additional FedRAMP Requirements and Guidance</title>
+					<part id="ac-7_fr_smt.1" name="item">
+						<prop name="label" value="Requirement:"/>
+						<p>In alignment with NIST SP 800-63B.</p>
+					</part>
+				</part>
+			</add>
+		</alter>
+
+  </modify>
+  <back-matter>
+    <resource uuid="ad005eae-cc63-4e64-9109-3905a9a825e4">
+			<title>NIST Special Publication (SP) 800-53</title>
+			<prop name="version" value="5.1.1"/>
+			<rlink media-type="application/xml" href="https://raw.githubusercontent.com/usnistgov/oscal-content/v1.2.0/nist.gov/SP800-53/rev5/xml/NIST_SP-800-53_rev5_catalog.xml"/>
+    </resource>
+  </back-matter>
+</profile>
