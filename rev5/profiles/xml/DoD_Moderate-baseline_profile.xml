@@ -83,7 +83,7 @@
 		<set-parameter param-id="ac-07_odp.01">
 			<constraint>
 				<description>
-					<p>for privileged users three unsuccessful attempts; for nonprivileged users 10
+					<p>for privileged users three unsuccessful attempts and after five unsuccessful attempts for accounts using a SIPR token; for nonprivileged users 10
 						attempts</p>
 				</description>
 			</constraint>
